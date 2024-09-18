@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Node",  // Consider switching from "bundler" to "Node" if you encounter issues.
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Additional Compatibility Options */
+    "allowSyntheticDefaultImports": true, // Helpful for module imports
+    "esModuleInterop": true, // Allows CommonJS and ES modules to work together,
+    "allowJs": true,
+    "baseUrl": "src"
+  },
+  // "include": ["src"],
+  "include": ["src", "./setupTest.ts", "./vite.config.ts"],
+  "exclude": [
+    "**/node_modules",
+    "**/.*/"
+  ]
+}

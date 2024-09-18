@@ -1,0 +1,14 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+green='\033[0;32m'
+no_color='\033[0m'
+
+echo "\n${green}checking styleline rules${no_color}"
+yarn stylelint
+
+echo "\n${green}checking the eslint rules${no_color}"
+yarn eslint:commit
+
+echo "\n${green}checking the typescript compiler${no_color}"
+yarn test-once

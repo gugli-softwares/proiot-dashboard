@@ -1,0 +1,35 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-tailwindcss"
+    ],
+    "plugins": [
+      "stylelint-order"
+    ],
+    "rules": {
+      "order/order": [
+        "custom-properties",
+        "declarations"
+      ],
+      "order/properties-alphabetical-order": null,  
+      "font-family-no-missing-generic-family-keyword": null,  
+      "media-feature-range-notation": null,  
+      "keyframes-name-pattern": null, 
+      "declaration-block-no-redundant-longhand-properties": null,  
+      "selector-class-pattern": null,  
+      "alpha-value-notation": null,  
+      "color-function-notation": null, 
+      "property-no-vendor-prefix": null, 
+      "at-rule-no-vendor-prefix": null, 
+      "number-max-precision": [2, { "severity": "error" }], 
+      "selector-not-notation": null,  
+      "selector-id-pattern": null, 
+      "font-family-name-quotes": "always-where-required",  
+      "custom-property-pattern": null, 
+      "selector-attribute-quotes": "always", 
+      "value-no-vendor-prefix": null,
+      "function-url-quotes": "always", 
+      "shorthand-property-no-redundant-values": null  
+    }
+  }
+  
